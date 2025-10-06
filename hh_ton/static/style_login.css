@@ -1,0 +1,137 @@
+* {
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}        
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}        
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 15px;
+    }
+}
+
+
+
+body{
+    height: 100%;
+}
+
+.cont_regisration{
+    color: azure;
+    background-color: #8293dc;
+    height: 837px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regisration {
+    color: azure;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #7619d4;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 20px;
+    height: 20px;
+}
+
+.but_login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.but_login_button{
+    color: azure;
+    margin-top: 30px;
+    height: 30px;
+    width: 150px;
+    border-radius: 1rem;
+    border-width: 0px;
+    background-color: #667eea;
+}
+
+.but_login_button:hover {
+    transition: all 0.3s ease;
+    background-color: #51dab8;
+    color: azure;
+}

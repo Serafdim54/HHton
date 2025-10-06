@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+  <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ url_for('base')}}" class="nav-logo">HH_TON</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('pronget')}}" class="nav-link active">Разделы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#filters" class="nav-link">Фильтры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('base')}}" class="nav-link">Главная</a
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+    
+    <div class="mainContent">
+        <div class="Heder_Filter">
+            <h1> Здравоохранение </h1>
+        </div>
+        <div class="container">
+        
+            {% for new in news %}
+                <div class="myContent">
+                    <h2>{{new['title']}}</h2>
+                    <div class="massive">
+                        <p>{{new['time']}}</p>
+                        <p>{{new['date']}}</p>
+                        <a href="{{new['link']}}"><p>Ссылка</p></a>
+                        <img src="{{new[image]}}" alt="">
+                    </div>
+                </div>
+            {% endfor %} 
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

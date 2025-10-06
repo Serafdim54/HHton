@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="container">
+        
+            {% for new in news %}
+                <div class="myContent">
+                    <h2>{{new['title']}}</h2>
+                    <div class="massive">
+                        <p>{{new['time']}}</p>
+                        <p>{{new['date']}}</p>
+                        <a href="{{new['link']}}"><p>Ссылка</p></a>
+                        <img src="{{new[image]}}" alt="">
+                    </div>
+                </div>
+            {% endfor %} 
+    </div>
+
+{% endblock %}

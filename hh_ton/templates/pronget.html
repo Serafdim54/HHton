@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_pronget.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ url_for('base')}}" class="nav-logo">HH_TON</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#sections" class="nav-link active">Разделы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#filters" class="nav-link">Фильтры</a>
+                </li>
+               <li class="nav-item">
+                    <a href="{{ url_for('base')}}" class="nav-link">Главная</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+    <div class="conten_pronger">
+        <h1 class="h1_content">Разделы</h1>
+        <div class="buttonbox">
+            <div class="left_bt">
+                <a href="{{url_for('pol')}}"><button type="button" class="link_pr_select" id="pol">Политика</button></a>
+                <a href="{{url_for('it')}}"><button type="button" class="link_pr_select" id="IT">IT</button></a>
+                <a href="{{url_for('educ')}}"><button type="button" class="link_pr_select" id="School">Образование</button></a>
+            </div>
+            
+            <div class="right_bt">
+                <a href="{{url_for('scin')}}"><button type="button" class="link_pr_select" id="Science">Наука</button></a>
+                <a href="{{url_for('heal')}}"><button type="button" class="link_pr_select" id="med">Здравоохранение</button></a>
+                <a href="{{url_for('sp')}}"><button type="button" class="link_pr_select" id="Sport">Спорт</button></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
