@@ -6,3 +6,4 @@ lxml==6.0.2
 feedparser
 selenium
 fake-useragent
+feedparser
