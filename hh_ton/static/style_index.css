@@ -134,3 +134,123 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+@media (max-width: 600px) {
+    .massive{
+        margin-top: 20px;
+        padding-bottom: -5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;   
+        align-items: center; 
+        flex-direction: column;
+        background-color: #cccce4;
+
+    }
+    .myContent {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #e0e0e1;
+        color: rgb(67, 96, 164);
+        border: 5px black;
+        border-style:initial;
+        border-radius: 2rem;
+    }
+    .mainContent {
+    color: white;
+    padding: 5px;
+    width: 100%;
+    background-color: #8293dc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+}
+
+@media (max-width: 415px) {
+    .massive{
+        margin-top: 20px;
+        padding-bottom: -5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;   
+        align-items: center; 
+        flex-direction: column;
+        background-color: #cccce4;
+
+    }
+    .myContent {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #e0e0e1;
+        color: rgb(67, 96, 164);
+        border: 5px black;
+        border-style:initial;
+        border-radius: 2rem;
+    }
+    .mainContent {
+    color: white;
+    padding: 0px;
+    width: 100%;
+    background-color: #8293dc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    background-color: #8293dc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+}
+
+
+@media (max-width: 370px) {
+    .massive{
+        margin-top: 20px;
+        padding-bottom: -5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;   
+        align-items: center; 
+        flex-direction: column;
+        background-color: #cccce4;
+
+    }
+    .myContent {
+        width: 95%;
+        padding: 10px;
+        margin: 0px;
+        margin-bottom: 10px;
+        background-color: #e0e0e1;
+        color: rgb(67, 96, 164);
+        border: 5px black;
+        border-style:initial;
+        border-radius: 2rem;
+    }
+    .mainContent {
+    color: white;
+    padding: 0px;
+    width: 100%;
+    background-color: #8293dc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    .container{
+        padding: 5px;
+        width: 100%;
+        background-color: #8293dc;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

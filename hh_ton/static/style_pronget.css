@@ -102,6 +102,7 @@ Content - Block
     text-align: center;
 }
 .buttonbox{
+    transition: all 0.3s ease;
     background-color: #8293dc;
     display: flex;
     flex-direction: row;
@@ -109,6 +110,7 @@ Content - Block
 }
 
 .right_bt, .left_bt {
+    transition: all 0.3s ease;
     width: 500px;
     margin-left: 20px;
     margin-right: 20px;
@@ -116,6 +118,7 @@ Content - Block
 }
 
 .link_pr_select{
+    transition: all 0.3s ease;
     color: lightcyan;
     font-size: x-large;
     height: 300px;
@@ -128,30 +131,65 @@ Content - Block
     border-width: 0px;
 }
 #med{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/med.jpeg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/med.jpeg');
     background-repeat:round;
+    transition: all 0.3s ease;
 }
 #IT{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/IT.tiff');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/IT.tiff');
     background-repeat:round;
+    transition: all 0.3s ease;
 }
 #pol{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/Pol.tiff');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/Pol.tiff');
     background-repeat:round;
+    transition: all 0.3s ease;
 }
 #Science{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/Science.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/Science.jpg');
     background-repeat:round;
+    transition: all 0.3s ease;
 }
 #Sport{
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/sport.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/sport.png');
     background-repeat:round;
+    transition: all 0.3s ease;
 }
 #School{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(187, 183, 255, 0.3)), url('img/School.png');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(187, 183, 255, 0.3)), url('img/School.png');
+    background-repeat:round;
+    transition: all 0.3s ease;
+}
+
+
+#med:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/med.jpeg');
+    background-repeat:round;
+    
+}
+#IT:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/IT.tiff');
     background-repeat:round;
 }
+#pol:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/Pol.tiff');
+    background-repeat:round;
+}
+#Science:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/Science.jpg');
+    background-repeat:round;
+}
+#Sport:hover{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/sport.png');
+    background-repeat:round;
+}
+#School:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(187, 183, 255, 0.3)), url('img/School.png');
+    background-repeat:round;
+}
+
 
 .link_pr_select:hover {
     font-size: xx-large;
